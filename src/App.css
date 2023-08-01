@@ -1,38 +1,178 @@
-.App {
+body{
+  background:  url('../public/images/chahong.jpg') no-repeat;
+  background-size: 100%;
+}
+article{
+  width: 1000px;
+  margin: 50px auto 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+article>h1{
+  font-size: 33px;
+  margin-bottom: 25px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+article>dl{
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn>button{
+  width: 300px;
+  border: none;
+  background-color: #51c42e;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+}
+#appoint{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+#appoint>ul{
+  display: flex;
 }
+#appoint>ul>li{
+  margin: 20px;
+}
+#appoint>ul>li>input,#appoint>ul>li>textarea{
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: 4px;
+  color: #4d4d4d;
+}
+figure{
+  width: 700px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+figure>img{
+  width: 200px;
+  margin-right: 60px;
+}
+figure>figcaption{
+  width: 600px;
+}
+figure dt{
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+figure dd{
+  padding-bottom: 10px;
+  font-size: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+figure dd>button{
+  margin-top: 20px;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #51c42e;
+  color: #000;
+  border: none;
+  margin-right: 20px;
+}
+#check{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  text-align: center;
+}
+#check>h1{
+  font-size: 33px;
+  padding: 20px;
+}
+#check>ul{
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+#check>ul>li{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+#check>ul>li>label{
+  width: 15%;
+}
+#check>ul>li>input,#check>ul>li>textarea{
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: 4px;
+  color: #4d4d4d;
+}
+#check>dl>dt{
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+#check>dl>dd{
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+#check>p{
+  padding: 20px;
+  text-align: center;
+}
+#check>p>button{
+  width: 200px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  background-color: #c3ffb1;
+  cursor: pointer;
+}
+#reserved{
+  width: 800px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  text-align: center;
+}
+#reserved>.checked{
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+#reserved>.checked>li>p{
+  font-size: 33px;
+  padding: 20px;
+}
+#reserved>.myinfo{
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+#reserved>.myinfo>li{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+#reserved>.myinfo>li>label{
+  width: 15%;
+}
+#reserved>.myinfo>li>input,#reserved>.myinfo>li>textarea{
+  width: 80%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: 4px;
+  color: #4d4d4d;
+}
+#reserved>p{
+  padding: 20px;
+  text-align: center;
+}
+#reserved>p>button{
+  width: 200px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000;
+  background-color: #c3ffb1;
+  cursor: pointer;
 }
