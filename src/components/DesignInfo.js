@@ -10,9 +10,9 @@ export default function DesignInfo({info,onClick,liist,setLiist}){
           <dd>review {info.review}</dd>
           <dd><button type="button">예약하기</button></dd>
         </dl>
-        {/* <Reservation 
+        <Reservation 
           lastId = {liist.reduce((max,item) => Number(item.id) > max ? Number(item.id) : max,0)}
-          onSendAppoint = {myappoint => setLiist=([...liist,myappoint])} /> */}
+          onSendAppoint = {myappoint => setLiist=([...liist,myappoint])} />
       </figcaption>
     </figure>
   )

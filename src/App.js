@@ -37,13 +37,15 @@ export default function App() {
     <div className='btn'>
     <Button text='예약신청'/>
     <Button text='예약확인' setModal={setModal} modal={modal}/>
-    {modal === true ? <ReservCheck liist={liist} setLiist={setLiist}/> : null}
+    {modal === true ? <ReservCheck
+    key={liist.id} infos={liist}  /> : null}
     </div>
     <AddAppointment />
     <div id='list'>
       <ul>
         {list.map(item => (
           <DesignInfo key={item.id} info={item}
+          liist={liist} setLiist={setLiist}
           />
         ))}
         
